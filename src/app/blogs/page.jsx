@@ -1,4 +1,5 @@
 import React from 'react';
+import BlogCard from '../components/BlogCard';
 
 
 const blogs = [
@@ -50,9 +51,7 @@ const BlogsPage = () => {
     return (
         <div className='min-h-screen w-full bg-gradient-to-r from-green-100 to-purple-300'>
             {
-                blogs.map(blog => {
-                    
-                })
+                blogs.map(blog => <BlogCard key={blog.id} blog={blog}></BlogCard>)
             }
         </div>
     );
