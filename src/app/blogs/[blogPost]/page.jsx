@@ -59,10 +59,10 @@ const BlogPost = async({params}) => {
 
             {
                 blog &&
-<div className="mt-6 grid md:grid-cols-3 gap-4">
+<div className="min-h-screen w-full bg-gradient-to-r from-blue-300 to-violet-100 pt-[80px] pb-[80px] grid md:grid-cols-3 gap-4">
 
   {/* What I Learned */}
-  <div className="p-5 bg-blue-50 rounded-2xl border border-blue-100">
+  <div className="p-5 m-7 bg-blue-50 rounded-2xl border border-blue-100">
     <Image
         src={blog.image}
         alt="Coding setup"
@@ -79,7 +79,7 @@ const BlogPost = async({params}) => {
   </div>
 
   {/* Challenge */}
-  <div className="p-5 bg-purple-50 rounded-2xl border border-purple-100">
+  <div className="p-5 m-7 bg-purple-50 rounded-2xl border border-purple-100">
     <div className="text-3xl mb-3">💡</div>
     <h3 className="font-bold text-lg text-purple-900">
       My Challenge
@@ -90,7 +90,7 @@ const BlogPost = async({params}) => {
   </div>
 
   {/* Next Step */}
-  <div className="p-5 bg-pink-50 rounded-2xl border border-pink-100">
+  <div className="p-5 m-7 bg-pink-50 rounded-2xl border border-pink-100">
     <div className="text-3xl mb-3">🚀</div>
     <h3 className="font-bold text-lg text-pink-900">
       What&apos;s Next
