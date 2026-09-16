@@ -13,6 +13,17 @@ const nextConfig = {
       },
     ],
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'plus.unsplash.com',
+        port: '',
+        pathname: '**',
+        search: '',
+      },
+    ],
+  },
 };
 
 export default nextConfig;
